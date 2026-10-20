@@ -1,13 +1,10 @@
 # URL to Markdown API
 
-URL to Markdown is a powerful tool for converting any webpage into clean, readable Markdown format. It preserves the document structure including headings, links, lists, and images.
+URL to Markdown converts any webpage URL into structured Markdown text. Each response delivers the page title, converted text, word count, and element counts, with paid plans adding optional link and image syntax.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/urltomarkdown.svg)](https://www.npmjs.com/package/@apiverve/urltomarkdown)
 
-This is a Javascript Wrapper for the [URL to Markdown API](https://apiverve.com/marketplace/urltomarkdown?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [URL to Markdown API](https://apiverve.com/marketplace/urltomarkdown?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/urltomarkdown
 ## Configuration
 
 Before using the URL to Markdown API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The URL to Markdown API documentation is found here: [https://docs.apiverve.com/ref/urltomarkdown](https://docs.apiverve.com/ref/urltomarkdown?utm_source=npm&utm_medium=readme).
+The URL to Markdown API documentation is found here: [https://docs.apiverve.com/ref/urltomarkdown](https://docs.apiverve.com/ref/urltomarkdown?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -60,7 +57,7 @@ Using the API is simple. All you have to do is make a request. The API will retu
 
 ```javascript
 var query = {
-  "url": "https://example.com/blog/getting-started",
+  "url": "https://example.com/",
   "includeImages": true,
   "includeLinks": true
 };
@@ -82,7 +79,7 @@ You can also use promises to make requests. The API returns a promise that you c
 
 ```javascript
 var query = {
-  "url": "https://example.com/blog/getting-started",
+  "url": "https://example.com/",
   "includeImages": true,
   "includeLinks": true
 };
@@ -105,7 +102,7 @@ You can also use async/await to make requests. The API returns a promise that yo
 ```javascript
 async function makeRequest() {
     var query = {
-  "url": "https://example.com/blog/getting-started",
+  "url": "https://example.com/",
   "includeImages": true,
   "includeLinks": true
 };
@@ -128,11 +125,11 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "url": "https://example.com/blog/getting-started",
-    "title": "Getting Started Guide",
-    "markdown": "# Getting Started Guide\n\nWelcome to our platform. This guide will help you get up and running quickly.\n\n## Prerequisites\n\nBefore you begin, make sure you have:\n\n- A registered account\n- API credentials\n- Node.js 18 or higher\n\n## Installation\n\nInstall the package using npm:\n\n```\nnpm install example-sdk\n```\n\n## Quick Start\n\nHere's a simple example to get you started:\n\n1. Import the SDK\n2. Initialize with your API key\n3. Make your first request\n\n## Next Steps\n\nCheck out our [documentation](https://example.com/docs) for more details.\n\n![Example Screenshot](https://example.com/images/screenshot.png)",
-    "wordCount": 87,
-    "imageCount": 1,
+    "url": "https://example.com/",
+    "title": "Example Domain",
+    "markdown": "# Example Domain\n\n\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\n\n\n[Learn more](https://iana.org/domains/example)",
+    "wordCount": 20,
+    "imageCount": 0,
     "linkCount": 1
   }
 }
@@ -142,7 +139,7 @@ async function makeRequest() {
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -154,12 +151,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

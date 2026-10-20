@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/urltomarkdown",
-  "version": "1.2.0",
-  "description": "URL to Markdown is a powerful tool for converting any webpage into clean, readable Markdown format. It preserves the document structure including headings, links, lists, and images.",
+  "version": "1.2.2",
+  "description": "URL to Markdown converts any webpage URL into structured Markdown text. Each response delivers the page title, converted text, word count, and element counts, with paid plans adding optional link and image syntax.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "url to markdown", "webpage to markdown", "html to markdown", "website converter", "markdown converter"
+    "url to markdown api", "markdown from url api", "website to markdown api", "webpage to markdown api", "convert url to markdown"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/urltomarkdown-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/urltomarkdown?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/urltomarkdown?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

@@ -15,7 +15,7 @@ const api = new urltomarkdownAPI({
 
 // Example query
 var query = {
-  "url": "https://example.com/blog/getting-started",
+  "url": "https://example.com/",
   "includeImages": true,
   "includeLinks": true
 };
