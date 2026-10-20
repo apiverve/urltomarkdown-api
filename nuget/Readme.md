@@ -1,13 +1,12 @@
-URLtoMarkdown API
+URL to Markdown API
 ============
 
-URL to Markdown is a powerful tool for converting any webpage into clean, readable Markdown format. It preserves the document structure including headings, links, lists, and images.
+URL to Markdown converts any webpage URL into structured Markdown text. Each response delivers the page title, converted text, word count, and element counts, with paid plans adding optional link and image syntax.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [URLtoMarkdown API](https://apiverve.com/marketplace/urltomarkdown?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.URLtoMarkdown.svg)](https://www.nuget.org/packages/APIVerve.API.URLtoMarkdown)
+
+This is a .NET wrapper for the [URL to Markdown API](https://apiverve.com/marketplace/urltomarkdown?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the urltomarkdown API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the URL to Markdown API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,10 +60,10 @@ class Program
         var apiClient = new URLtoMarkdownAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
-};
+            Url = "https://example.com/",
+            IncludeImages = true,
+            IncludeLinks = true
+        };
 
         // Make the API call
         try
@@ -94,13 +93,13 @@ class Program
 
 ## Usage
 
-The URLtoMarkdown API documentation is found here: [https://docs.apiverve.com/ref/urltomarkdown](https://docs.apiverve.com/ref/urltomarkdown?utm_source=nuget&utm_medium=readme).
+The URL to Markdown API documentation is found here: [https://docs.apiverve.com/ref/urltomarkdown](https://docs.apiverve.com/ref/urltomarkdown?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-URLtoMarkdown API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+URL to Markdown API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -127,10 +126,10 @@ public class Example
         var apiClient = new URLtoMarkdownAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
-};
+            Url = "https://example.com/",
+            IncludeImages = true,
+            IncludeLinks = true
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -161,10 +160,10 @@ public class Example
         var apiClient = new URLtoMarkdownAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
-};
+            Url = "https://example.com/",
+            IncludeImages = true,
+            IncludeLinks = true
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -200,10 +199,10 @@ public class Example
         var apiClient = new URLtoMarkdownAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
-};
+            Url = "https://example.com/",
+            IncludeImages = true,
+            IncludeLinks = true
+        };
 
         try
         {
@@ -258,10 +257,10 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
-};
+            Url = "https://example.com/",
+            IncludeImages = true,
+            IncludeLinks = true
+        };
 
         try
         {
@@ -301,9 +300,9 @@ apiClient.AddCustomHeader("X-Custom-Header", "custom-value");
 apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 
 var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
+    Url = "https://example.com/",
+    IncludeImages = true,
+    IncludeLinks = true
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -329,9 +328,9 @@ apiClient.SetLogger(message =>
 });
 
 var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
+    Url = "https://example.com/",
+    IncludeImages = true,
+    IncludeLinks = true
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -349,9 +348,9 @@ apiClient.SetMaxRetries(3);           // Retry up to 3 times (default: 0, max: 3
 apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (default: 1000ms)
 
 var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
+    Url = "https://example.com/",
+    IncludeImages = true,
+    IncludeLinks = true
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -363,9 +362,9 @@ The API client implements `IDisposable` for proper resource cleanup:
 
 ```csharp
 var queryOptions = new URLtoMarkdownQueryOptions {
-    url = "https://example.com/blog/getting-started",
-    includeImages = true,
-    includeLinks = true
+    Url = "https://example.com/",
+    IncludeImages = true,
+    IncludeLinks = true
 };
 
 using (var apiClient = new URLtoMarkdownAPIClient("[YOUR_API_KEY]"))
@@ -385,11 +384,11 @@ using (var apiClient = new URLtoMarkdownAPIClient("[YOUR_API_KEY]"))
   "status": "ok",
   "error": null,
   "data": {
-    "url": "https://example.com/blog/getting-started",
-    "title": "Getting Started Guide",
-    "markdown": "# Getting Started Guide\n\nWelcome to our platform. This guide will help you get up and running quickly.\n\n## Prerequisites\n\nBefore you begin, make sure you have:\n\n- A registered account\n- API credentials\n- Node.js 18 or higher\n\n## Installation\n\nInstall the package using npm:\n\n```\nnpm install example-sdk\n```\n\n## Quick Start\n\nHere's a simple example to get you started:\n\n1. Import the SDK\n2. Initialize with your API key\n3. Make your first request\n\n## Next Steps\n\nCheck out our [documentation](https://example.com/docs) for more details.\n\n![Example Screenshot](https://example.com/images/screenshot.png)",
-    "wordCount": 87,
-    "imageCount": 1,
+    "url": "https://example.com/",
+    "title": "Example Domain",
+    "markdown": "# Example Domain\n\n\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\n\n\n[Learn more](https://iana.org/domains/example)",
+    "wordCount": 20,
+    "imageCount": 0,
     "linkCount": 1
   }
 }
@@ -399,7 +398,7 @@ using (var apiClient = new URLtoMarkdownAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -410,12 +409,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
