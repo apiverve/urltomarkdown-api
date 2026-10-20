@@ -19,7 +19,7 @@ def call_urltomarkdown_api():
     try:
         # Request body
         request_body &#x3D; {
-    &#x27;url&#x27;: &#x27;https://example.com/blog/getting-started&#x27;,
+    &#x27;url&#x27;: &#x27;https://example.com/&#x27;,
     &#x27;includeImages&#x27;: true,
     &#x27;includeLinks&#x27;: true
 }

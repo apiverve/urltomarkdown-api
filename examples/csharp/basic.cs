@@ -30,7 +30,7 @@ namespace APIVerve.Examples
                 client.DefaultRequestHeaders.Add("x-api-key", API_KEY);
 
                 // Request body
-                var requestBody &#x3D; new { url &#x3D; &quot;https://example.com/blog/getting-started&quot;, includeImages &#x3D; true, includeLinks &#x3D; true };
+                var requestBody &#x3D; new { url &#x3D; &quot;https://example.com/&quot;, includeImages &#x3D; true, includeLinks &#x3D; true };
 
                 var jsonContent = JsonSerializer.Serialize(requestBody);
                 var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");

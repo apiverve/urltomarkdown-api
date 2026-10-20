@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: URL to Markdown
   description: >-
-    URL to Markdown is a powerful tool for converting any webpage into clean,
-    readable Markdown format. It preserves the document structure including
-    headings, links, lists, and images.
+    URL to Markdown converts any webpage URL into structured Markdown text. Each
+    response delivers the page title, converted text, word count, and element
+    counts, with paid plans adding optional link and image syntax.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/urltomarkdown:
     post:
-      summary: Convert URL to Markdown
+      summary: URL to Markdown
       description: Convert a webpage URL to Markdown format
       operationId: urltomarkdown
       parameters: []
@@ -44,66 +44,21 @@ paths:
                 status: ok
                 error: null
                 data:
-                  url: https://example.com/blog/getting-started
-                  title: Getting Started Guide
+                  url: https://example.com/
+                  title: Example Domain
                   markdown: >-
-                    # Getting Started Guide
+                    # Example Domain
 
 
-                    Welcome to our platform. This guide will help you get up and
-                    running quickly.
+
+                    This domain is for use in documentation examples without
+                    needing permission. Avoid use in operations.
 
 
-                    ## Prerequisites
 
-
-                    Before you begin, make sure you have:
-
-
-                    - A registered account
-
-                    - API credentials
-
-                    - Node.js 18 or higher
-
-
-                    ## Installation
-
-
-                    Install the package using npm:
-
-
-                    ```
-
-                    npm install example-sdk
-
-                    ```
-
-
-                    ## Quick Start
-
-
-                    Here's a simple example to get you started:
-
-
-                    1. Import the SDK
-
-                    2. Initialize with your API key
-
-                    3. Make your first request
-
-
-                    ## Next Steps
-
-
-                    Check out our [documentation](https://example.com/docs) for
-                    more details.
-
-
-                    ![Example
-                    Screenshot](https://example.com/images/screenshot.png)
-                  wordCount: 87
-                  imageCount: 1
+                    [Learn more](https://iana.org/domains/example)
+                  wordCount: 20
+                  imageCount: 0
                   linkCount: 1
         '401':
           description: Your request was not authorized, or your API Key was invalid
@@ -138,6 +93,6 @@ components:
 security:
   - api_key: []
 sampleRequest:
-  url: https://example.com/blog/getting-started
+  url: https://example.com/
   includeImages: true
   includeLinks: true

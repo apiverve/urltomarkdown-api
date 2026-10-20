@@ -15,7 +15,7 @@ async function callURLtoMarkdownAPI() {
   try {
     // Request body
     const requestBody &#x3D; {
-    &quot;url&quot;: &quot;https://example.com/blog/getting-started&quot;,
+    &quot;url&quot;: &quot;https://example.com/&quot;,
     &quot;includeImages&quot;: true,
     &quot;includeLinks&quot;: true
 };

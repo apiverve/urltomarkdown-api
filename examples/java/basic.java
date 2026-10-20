@@ -14,7 +14,7 @@ public class BasicExample {
         try {
             // Request body
             Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;url&quot;, &quot;https://example.com/blog/getting-started&quot;);
+        parameters.put(&quot;url&quot;, &quot;https://example.com/&quot;);
         parameters.put(&quot;includeImages&quot;, true);
         parameters.put(&quot;includeLinks&quot;, true);
 
