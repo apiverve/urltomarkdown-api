@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/urltomarkdown",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "URL to Markdown converts any webpage URL into structured Markdown text. Each response delivers the page title, converted text, word count, and element counts, with paid plans adding optional link and image syntax.",
   "main": "index.js",
   "types": "index.d.ts",
